@@ -30,7 +30,6 @@ public abstract class BaseRequest<O, T extends ResultResponse> {
     /**
      * 获取响应类
      *
-     * @return {@link Class}<{@link T}>
      */
     public abstract Class<T> getResponseClass();
 

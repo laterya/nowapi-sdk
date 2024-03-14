@@ -21,13 +21,16 @@ public interface ApiService {
      */
     <O, T extends ResultResponse> T request(BaseRequest<O, T> request) throws ApiException;
 
+
     /**
      * 通用请求
      *
-     * @param nowApiClient qi api客户端
-     * @param request      要求
-     * @return {@link T}
-     * @throws ApiException 业务异常
+     * @param nowApiClient
+     * @param request
+     * @param <O>
+     * @param <T>
+     * @return
+     * @throws ApiException
      */
     <O, T extends ResultResponse> T request(NowApiClient nowApiClient, BaseRequest<O, T> request) throws ApiException;
 

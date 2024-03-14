@@ -39,7 +39,6 @@ public class CurrencyRequest extends BaseRequest<Object, ResultResponse> {
     /**
      * 获取响应类
      *
-     * @return {@link Class}<{@link ResultResponse}>
      */
     @Override
     public Class<ResultResponse> getResponseClass() {
